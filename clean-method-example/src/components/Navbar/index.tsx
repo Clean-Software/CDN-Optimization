@@ -5,7 +5,7 @@ import ButtonBlue from '../buttonBlue';
 import './styles.scss';
 
 const Navbar = () => {
-    const arrayOfIcons: string[] = ['home', 'happy', '', 'user'];
+    const arrayOfIcons: string[] = ['home', 'happy', 'happy', 'user'];
     return (
         <nav className="NavBarMain">
             <a href="/">
@@ -15,7 +15,7 @@ const Navbar = () => {
                 {navBarItens.map((item, index) => {
                     return (
                         <li key={index}>
-                            <i className={`icon-${arrayOfIcons[index]}`}></i>
+                            <i className={`icon-${arrayOfIcons[index]}`} />
                             <a className={item.className} href={item.url}>
                                 {item.title}
                             </a>

@@ -10,7 +10,7 @@ interface IconTypes {
 }
 const defaultStyles = { display: 'inline-block', verticalAlign: 'middle' };
 
-const Icon = ({ size = 16, color = '#000000', icon, className = '', style = {}, viewBox = '0 0 24 24' }: IconTypes) => {
+const Icon = ({ size = 16, color = '#000000', icon, className = '', style = {}, viewBox = '0 0 29 29' }: IconTypes) => {
     const styles = { ...defaultStyles, ...style };
     return (
         <svg

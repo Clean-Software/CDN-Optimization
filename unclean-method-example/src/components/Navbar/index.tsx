@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../img/logo.svg';
+import logo from '../../img/logo.png';
 import navBarItens from '../../utils/itens';
 import ButtonBlue from '../buttonBlue';
 import Icon from '../Icon';
 import './styles.scss';
 
 const Navbar = () => {
-    const arrayOfIcons: string[] = ['home', 'happy', '', 'user'];
+    const arrayOfIcons: string[] = ['home', 'happy', 'happy', 'user'];
     return (
         <nav className="NavBarMain">
             <a href="/">
