@@ -2,9 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/sobreOSite.css';
 import ButtonBlue from '../components/buttonBlue';
-import imgCrop1 from '../img/imgCrop1.png';
-import imgCrop2 from '../img/imgCrop2.png';
-import imgCrop3 from '../img/imgCrop3.png';
+import { Crop1, Crop2, Crop3 } from '../img';
 
 function Home() {
     return (
@@ -29,15 +27,16 @@ function Home() {
                 <div className="titlePet">Porque adotar um Pet?</div>
                 <div className="imgCropContainer">
                     <figure className="imgLabel">
-                        <img src={imgCrop1} alt="imgCrop1" className="imgCrop" />
+                        <img src={Crop1} alt="imgCrop1" className="imgCrop" loading="lazy" />
                         <figcaption> Você terá um companheiro para todas as horas</figcaption>
                     </figure>
                     <figure className="imgLabel">
-                        <img src={imgCrop2} alt="imgCrop2" className="imgCrop" />
+                        <img src={Crop2} alt="imgCrop2" className="imgCrop" loading="lazy" />
                         <figcaption>Você estará resgatando uma vida</figcaption>
                     </figure>
                     <figure className="imgLabel">
-                        <img src={imgCrop3} alt="imgCrop3" className="imgCrop" />
+                        <img src={Crop3} alt="imgCrop2" className="imgCrop" loading="lazy" />
+
                         <figcaption>Animais ajudam a desenvolver responsabilidade</figcaption>
                     </figure>
                 </div>

@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     height: 520px;
-    background: url(../img/dogHeader.png);
+    background: url(https://res.cloudinary.com/zoft/image/upload/v1642273958/dogHeader_gkzduy.png);
     background-position: center;
     background-size: cover;
 }
@@ -65,7 +65,8 @@ body {
 
 .mainBackgroud {
     height: 1400px;
-    background: url(../img/bgBack.png), url(../img/bgFront.png);
+    background: url(https://res.cloudinary.com/zoft/image/upload/v1642273906/bgBack_zujybg.png),
+        url(https://res.cloudinary.com/zoft/image/upload/v1642273926/bgFront_og7tql.png);
     background-size: cover;
     /* background: url(../img/bgFront.png) */
 }
@@ -119,7 +120,7 @@ body {
 .footer {
     margin-top: -150px;
     height: 400px;
-    background: url(../img/footer.png);
+    background: url(https://res.cloudinary.com/zoft/image/upload/v1642273959/footer_egpz0j.png);
     background-size: cover;
 }
 

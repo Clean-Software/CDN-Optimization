@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../../img/logo.svg';
+import { BASE_URL_CLOUDINARY } from '../../shared/GLOBAL';
 import navBarItens from '../../utils/itens';
 import ButtonBlue from '../buttonBlue';
-import Icon from '../Icon';
+// import Icon from '../Icon';
 import './styles.scss';
 
 const Navbar = () => {
@@ -10,13 +10,17 @@ const Navbar = () => {
     return (
         <nav className="NavBarMain">
             <a href="/">
-                <img className="logo" src={logo} alt="Logo da PetAdopt" />
+                <img
+                    className="logo"
+                    src={`${BASE_URL_CLOUDINARY}v1642273991/logo_exfoez.png`}
+                    alt="Logo da PetAdopt"
+                />
             </a>
             <ul className="nav-menu">
                 {navBarItens.map((item, index) => {
                     return (
                         <li key={index}>
-                            <Icon icon={arrayOfIcons[index]} size={24} />
+                            {/* <Icon icon={arrayOfIcons[index]} size={24} /> */}
                             <a className={item.className} href={item.url}>
                                 {item.title}
                             </a>

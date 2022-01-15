@@ -1,5 +1,5 @@
 import React from 'react';
-import iconPath from '../../fonts';
+//import iconPath from '../../shared';
 interface IconTypes {
     size?: number;
     color?: string;
@@ -22,7 +22,7 @@ const Icon = ({ size = 16, color = '#000000', icon, className = '', style = {}, 
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-            <path fill={color} d={iconPath[icon]} />
+            {/* <path fill={color} d={iconPath[icon]} /> */}
         </svg>
     );
 };
