@@ -1,6 +1,6 @@
 import { BASE_URL_CLOUDINARY } from '../shared/GLOBAL';
 
-export const logo = BASE_URL_CLOUDINARY + 'v1569098982/zoft/logo.png';
+export const logo = BASE_URL_CLOUDINARY + 'v1642273991/logo_exfoez.png';
 export const Crop1 = BASE_URL_CLOUDINARY + 'v1642273965/imgCrop1_mplqux.png';
 export const Crop2 = BASE_URL_CLOUDINARY + 'v1642273973/imgCrop2_iwxhwr.png';
 export const Crop3 = BASE_URL_CLOUDINARY + 'v1642273980/imgCrop3_yieybu.png';
