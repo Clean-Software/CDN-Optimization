@@ -65,16 +65,11 @@ const config = {
             },
             // Loading images
             {
-                test: /\.(png|jpg|gif|ico|jpeg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'images',
-                            name: '[name]-[sha1:hash:7].[ext]',
-                        },
-                    },
-                ],
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '/public/icons/[name].[ext]',
+                },
             },
             // Loading fonts
             {
@@ -103,7 +98,7 @@ const config = {
         new ForkTsCheckerWebpackPlugin({
             async: false,
             eslint: {
-                files: './src/**/*',
+                files: path.resolve(__dirname, './src/**/*.{ts,tsx,js,jsx}'),
             },
         }),
         new HotModuleReplacementPlugin(),
