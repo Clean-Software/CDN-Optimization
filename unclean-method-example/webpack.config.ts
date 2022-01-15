@@ -1,17 +1,57 @@
+import path from 'path';
 import { HotModuleReplacementPlugin } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
 
+const mode = 'production';
+
 const config = {
-    mode: 'production',
+    mode: mode,
     entry: './src/index.tsx',
     output: {
-        path: __dirname + 'build',
-        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'build'),
+        filename: 'index.js',
     },
+    optimization: {
+        sideEffects: false,
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    compress: true,
+                },
+            }),
+        ],
+    },
+
     module: {
         rules: [
+            // Loading css and sass files
+            {
+                test: /\.((s[ac]|c)ss)$/,
+                use: [
+                    {
+                        loader: mode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            import: true,
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            // Prefer `dart-sass`
+                            implementation: require('sass'),
+                        },
+                    },
+                ],
+            },
             // Loading TypeScript files
             {
                 test: /\.(ts|js)x?$/,
@@ -49,18 +89,13 @@ const config = {
                     },
                 ],
             },
-            // Loading css and sass files
-            {
-                test: /\.(s?)css$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
         ],
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.css', '.scss'],
     },
     devServer: {
-        static: __dirname + 'build',
+        static: path.resolve(__dirname, 'build'),
         compress: true,
         port: 4000,
     },
