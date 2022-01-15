@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="happy" unicode="&#xe801;" d="M384 411a42 42 0 0 1 59 0 42 42 0 0 1 0 59 128 128 0 0 1-177 0 42 42 0 1 1 59-59 42 42 0 0 0 59 0z m116 356a417 417 0 1 1 417-417 417 417 0 0 1-417 417z m0-750a333 333 0 1 0 333 333 333 333 0 0 0-333-333z m125 458a42 42 0 1 1 42-42 42 42 0 0 1-42 42z m0-167h-250a42 42 0 0 1 0-83 125 125 0 0 1 250 0 42 42 0 0 1 0 83z m-125-125a42 42 0 0 0-42 42h84a42 42 0 0 0-42-42z" horiz-adv-x="1000" />
+
+<glyph glyph-name="home" unicode="&#xe802;" d="M903 423l-375 333a42 42 0 0 1-55 0l-375-333a42 42 0 0 1-12-46 42 42 0 0 1 39-27h42v-375a42 42 0 0 1 41-42h584a42 42 0 0 1 41 42v375h42a42 42 0 0 1 39 27 42 42 0 0 1-11 46z m-361-406h-84v125a42 42 0 0 0 84 0z m208 0h-125v125a125 125 0 0 1-250 0v-125h-125v333h500z m-515 416l265 236 265-236z" horiz-adv-x="1000" />
+
+<glyph glyph-name="user" unicode="&#xe803;" d="M655 320a250 250 0 1 1-310 0 417 417 0 0 1-259-340 42 42 0 0 1 84-10 333 333 0 0 0 662 0 42 42 0 0 1 42-37h4a42 42 0 0 1 37 46 417 417 0 0 1-260 341z m-155 30a167 167 0 1 0 167 167 167 167 0 0 0-167-167z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
